@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build the Stack
-        run: docker compose -f local.yml --env-file .env.example build
+        run: docker compose -f local.yml --env-file .env.example.local build
 
       - name: Tear down the Stack
-        run: docker compose -f local.yml --env-file .env.example down
+        run: docker compose -f local.yml --env-file .env.example.local down
