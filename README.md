@@ -1,10 +1,6 @@
-# Traefik 2.10
+# Traefik 2.11
 
-Other parts:
-
-1. [Traefik 2.10 as revers-proxy in Docker (SSL in dev and prod)](https://github.com/baikov/tpl-traefik)
-2. [Nuxt 3 production-ready template in Docker (SPA/SSR)](https://github.com/baikov/tpl-nuxt3)
-3. [Django/DRF backend in Docker (based on django-cookiecutter)](https://github.com/baikov/drf-tpl)
+Separate reverse proxy for services
 
 ## Improvement plan
 
@@ -93,7 +89,3 @@ Traefik dashboard is available at: https://tr.tpl.local/dashboard/#/
 1. If the domain is correctly bound to the server, the certificate will be issued automatically with Let's Encrypt
 
 Traefik dashboard is available at: https://tr.your_domain.com/dashboard/#/
-
-## Contributing
-
-I made this template for myself, but it's awesom if it helps someone else. The settings are far from ideal, so fell free to make a pull request.
