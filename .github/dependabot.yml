@@ -16,15 +16,23 @@ updates:
   # https://github.com/dependabot/dependabot-core/issues/2178
 
   - package-ecosystem: 'docker'
-    # Look for a `Dockerfile` in the `compose/production/traefik` directory
+    # Look for a `Dockerfile` in the `compose/production` directory
     directory: 'compose/local/'
     # Every weekday
     schedule:
       interval: 'daily'
+    ignore:
+      - dependency-name: 'traefik'
+        update-types:
+          - 'version-update:semver-major'
 
   - package-ecosystem: 'docker'
-    # Look for a `Dockerfile` in the `compose/production/traefik` directory
+    # Look for a `Dockerfile` in the `compose/production` directory
     directory: 'compose/production/'
     # Every weekday
     schedule:
       interval: 'daily'
+    ignore:
+      - dependency-name: 'traefik'
+        update-types:
+          - 'version-update:semver-major'
