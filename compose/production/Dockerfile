@@ -1,4 +1,4 @@
-FROM traefik:2.11.14
+FROM traefik:2.11.16
 RUN mkdir -p /etc/traefik/acme \
   && touch /etc/traefik/acme/acme.json \
   && chmod 600 /etc/traefik/acme/acme.json
